@@ -8,7 +8,8 @@ export const metadata = {
   title: "Diego Lauricella",
   description: "Portfolio Website",
   icons: {
-    icon: '/favicon.ico'
+    icon: '/favicon.ico',
+    touchIcon: '/apple-touch-icon.png'
   }
 };
 
