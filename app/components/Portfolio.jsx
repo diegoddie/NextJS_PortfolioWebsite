@@ -1,14 +1,24 @@
 'use client';
 
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import ProjectCard from './ProjectCard'
 import { PROJECTS_DATA } from "../utils/projectsData";
 import ProjectTag from './ProjectTag';
+import { motion, useInView } from 'framer-motion'
+
 
 const Portfolio = () => {
     const [tag, setTag] = useState("All")
     const [showAll, setShowAll] = useState(false);
 
+    const ref = useRef(null)
+    const isInView = useInView(ref, { once: true })
+
+    const cardVariants = {
+        initial: { y: 50, opacity: 0 },
+        animate: { y: 0, opacity: 1 },
+    };
+    
     const handleTagChange = (newTag) => {
         setTag(newTag);
         setShowAll(false);
@@ -35,19 +45,26 @@ const Portfolio = () => {
                 <ProjectTag onClick={handleTagChange} name="Blockchain" isSelected={tag === "Blockchain"} />
                 <ProjectTag onClick={handleTagChange} name="Front End" isSelected={tag === "Front End"} />
             </div>
-            <div className='grid lg:grid-cols-3 gap-8 lg
-            :gap-12 mt-4'>
-                {displayedProjects.map((project) => (
-                    <ProjectCard 
-                        key={project.id} 
-                        title={project.title} 
-                        description={project.description} 
-                        imgUrl={project.image}
-                        gitUrl={project.gitUrl}
-                        previewUrl={project.previewUrl}
-                    />
+            <ul ref={ref} className='grid lg:grid-cols-3 gap-8 lg:gap-12 mt-4'>
+                {displayedProjects.map((project, index) => (
+                    <motion.li
+                        key={index}
+                        variants={cardVariants}
+                        initial="initial"
+                        animate={isInView ? "animate" : "initial"}
+                        transition={{ duration: 0.3, delay: index * 0.4 }}
+                    >
+                        <ProjectCard 
+                            key={project.id} 
+                            title={project.title} 
+                            description={project.description} 
+                            imgUrl={project.image}
+                            gitUrl={project.gitUrl}
+                            previewUrl={project.previewUrl}
+                        />
+                    </motion.li>
                 ))}
-            </div>
+            </ul>
             {!showAll && filteredProjects.length > 6 && (
                 <div className="text-center mt-6">
                     <button onClick={handleShowMore} className="text-white transition duration-200 border-purple-500 hover:bg-purple-500 rounded-full border-2 px-6 py-3 text-xl cursor-pointer">
