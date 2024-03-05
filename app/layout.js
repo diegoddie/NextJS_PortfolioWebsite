@@ -9,7 +9,8 @@ export const metadata = {
   description: "Portfolio Website",
   icons: {
     icon: '/favicon.ico',
-    touchIcon: '/apple-touch-icon.png'
+    apple: '/apple-touch-icon.png',
+    shortcut: '/apple-touch-icon.png'
   }
 };
 
