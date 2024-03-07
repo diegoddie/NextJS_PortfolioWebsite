@@ -30,20 +30,20 @@ const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
     return (
-        <nav className="fixed mx-auto border-b border-b-white top-0 left-0 right-0 z-10 bg-slate-200 dark:bg-[#121212] bg-opacity-100">
+        <nav className="fixed mx-auto border-b border-b-black dark:border-b-white top-0 left-0 right-0 z-10 bg-bgLight dark:bg-bgDark bg-opacity-100">
             <div className='flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-8 py-2'>
-                <Link href={'/'} className='text-4xl lg:text-5xl text-white font-signature'>Diego Lauricella</Link>
+                <Link href={'/'} className='text-4xl lg:text-5xl text-slate-800 dark:text-white font-signature'>Diego Lauricella</Link>
                 <div className='mobile-menu flex lg:hidden items-center'>
                     <div className='cursor-pointer text-3xl mr-4'>
                         <ThemeSwitch />
                     </div>
                     {
                         !navbarOpen ? (
-                            <button onClick={() => setNavbarOpen(true)} className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white">
+                            <button onClick={() => setNavbarOpen(true)} className="flex items-center px-3 py-2 border rounded border-slate-800 text-slate-800 dark:border-slate-200 dark:text-slate-200 hover:text-black dark:hover:text-white hover:border-black dark:hover:border-white">
                                 <Bars3Icon className='h-6 w-6' />
                             </button>
                         ) : (
-                            <button onClick={() => setNavbarOpen(false)} className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white">
+                            <button onClick={() => setNavbarOpen(false)} className="flex items-center px-3 py-2 border rounded border-slate-800 text-slate-800 dark:border-slate-200 dark:text-slate-200 hover:text-black dark:hover:text-white hover:border-black dark:hover:border-white">
                                 <XMarkIcon className='h-6 w-6' />
                             </button>
                         )

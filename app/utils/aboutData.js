@@ -5,7 +5,7 @@ export const ABOUT_DATA = [
       content: (
         <div className="flex flex-wrap gap-6 md:gap-8 justify-center">
           <div className="flex flex-col mb-4 md:mb-0">
-            <h1 className="font-semibold rounded-full border-2 px-5 md:px-6 py-2 md:py-3 text-lg md:text-xl mx-auto">Backend</h1>
+            <h1 className="font-semibold rounded-full border-2 border-[#595d60] dark:border-white px-5 md:px-6 py-2 md:py-3 text-lg md:text-xl mx-auto">Backend</h1>
             <ul className="list-disc pl-4 pt-4 text-base md:text-lg">
               <li className="mb-1">Node.js</li>
               <li className="mb-1">Express.js</li>
@@ -17,7 +17,7 @@ export const ABOUT_DATA = [
             </ul>
           </div>
           <div className="flex flex-col mb-4 md:mb-0">
-            <h1 className="font-semibold rounded-full border-2 px-5 md:px-6 py-2 md:py-3 text-lg md:text-xl mx-auto">Frontend</h1>
+            <h1 className="font-semibold rounded-full border-2 border-[#595d60] dark:border-white px-5 md:px-6 py-2 md:py-3 text-lg md:text-xl mx-auto">Frontend</h1>
             <ul className="list-disc pl-4 pt-4 text-base md:text-lg">
               <li className="mb-1">HTML</li>
               <li className="mb-1">CSS</li>
@@ -29,7 +29,7 @@ export const ABOUT_DATA = [
             </ul>
           </div>
           <div className="flex flex-col mb-4 md:mb-0">
-            <h1 className="font-semibold rounded-full border-2 px-5 md:px-6 py-2 md:py-3 text-lg md:text-xl mx-auto">Frameworks</h1>
+            <h1 className="font-semibold rounded-full border-2 border-[#595d60] dark:border-white px-5 md:px-6 py-2 md:py-3 text-lg md:text-xl mx-auto">Frameworks</h1>
             <ul className="list-disc pl-4 pt-4 text-base md:text-lg">
               <li className="mb-1">NextJS</li>
               <li className="mb-1">Django</li>

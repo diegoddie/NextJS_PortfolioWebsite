@@ -16,8 +16,8 @@ const About = () => {
     }
 
     return (
-        <section className='text-white py-10 lg:py-20' id="about">
-            <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4 lg:mb-8">
+        <section className='text-[#595d60] dark:text-white py-10 lg:py-20' id="about">
+            <h2 className="text-center text-4xl font-bold mt-4 mb-4 lg:mb-8">
                 About Me
             </h2>
             <div className='flex flex-col lg:flex-row gap-6 lg:gap-2 py-4 px-2 xl:gap-16 xl:px-10'>

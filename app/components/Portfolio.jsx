@@ -35,11 +35,11 @@ const Portfolio = () => {
     const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 6);
 
     return (
-        <section id="portfolio" className='py-10 md:py-20 md:px-6'>
-            <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-8">
+        <section id="portfolio" className='py-10 md:py-20 md:px-6 text-[#595d60] dark:text-white'>
+            <h2 className="text-center text-4xl font-bold mt-4 mb-4 md:mb-8">
                 Portfolio
             </h2>
-            <div className='text-white flex flex-wrap justify-center items-center gap-2 pb-6'>
+            <div className='flex flex-wrap justify-center items-center gap-2 pb-6'>
                 <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
                 <ProjectTag onClick={handleTagChange} name="Full Stack" isSelected={tag === "Full Stack"} />
                 <ProjectTag onClick={handleTagChange} name="Blockchain" isSelected={tag === "Blockchain"} />
@@ -67,7 +67,7 @@ const Portfolio = () => {
             </ul>
             {!showAll && filteredProjects.length > 6 && (
                 <div className="text-center mt-6">
-                    <button onClick={handleShowMore} className="text-white transition duration-200 border-purple-500 hover:bg-purple-500 rounded-full border-2 px-6 py-3 text-xl cursor-pointer">
+                    <button onClick={handleShowMore} className="transition duration-200 border-blue-300 dark:border-purple-500 hover:bg-blue-300 dark:hover:bg-purple-500 rounded-full border-2 px-6 py-3 text-xl cursor-pointer">
                         Show More
                     </button>
                 </div>

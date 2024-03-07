@@ -6,8 +6,8 @@ import { SERVICES_DATA } from "../utils/servicesData";
 
 const Services = () => {
   return (
-    <section id='services' className='py-10 md:py-20 md:px-6'>
-        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-8">
+    <section id='services' className='py-10 md:py-20 md:px-6 text-[#595d60] dark:text-white'>
+        <h2 className="text-center text-4xl font-bold mt-4 mb-4 md:mb-8">
             Services
         </h2>
         <div className='flex flex-col lg:flex-row gap-8 mt-6 justify-center'>
