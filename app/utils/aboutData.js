@@ -23,6 +23,7 @@ export const ABOUT_DATA = [
               <li className="mb-1">CSS</li>
               <li className="mb-1">TailwindCSS</li>
               <li className="mb-1">Javascript</li>
+              <li className="mb-1">Typescript</li>
               <li className="mb-1">Bootstrap</li>
               <li className="mb-1">React</li>
               <li className="mb-1">Web3.js</li>
