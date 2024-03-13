@@ -34,7 +34,7 @@ const Contact = () => {
                         <Link href="https://www.fiverr.com/diegoddie" target='_blank'>
                             <SiFiverr className='h-10 w-10 md:h-12 md:w-12 transition duration-200 dark:text-white hover:text-slate-900 dark:hover:text-slate-500'/>
                         </Link>
-                        <Link href="https://www.upwork.com/freelancers/~01021369935709b658" target='_blank'>
+                        <Link href="https://www.upwork.com/freelancers/diegoddie" target='_blank'>
                             <SiUpwork className='h-10 w-10 md:h-12 md:w-12 transition duration-200 dark:text-white hover:text-slate-900 dark:hover:text-slate-500'/>
                         </Link>
                         <Link href='https://twitter.com/diegothedev' target='_blank'>
