@@ -25,7 +25,7 @@ const Contact = () => {
                         <Link href="https://github.com/diegoddie" target='_blank'>
                             <FaGithub className='h-10 w-10 md:h-12 md:w-12 transition duration-200 dark:text-white hover:text-slate-900 dark:hover:text-slate-500'/>
                         </Link>
-                        <Link href='https://www.linkedin.com/in/diego-lauricella-5059bb290' target='_blank'>
+                        <Link href='https://www.linkedin.com/in/diegolauricella' target='_blank'>
                             <FaLinkedin className='h-10 w-10 md:h-12 md:w-12 transition duration-200 dark:text-white hover:text-slate-900 dark:hover:text-slate-500'/>
                         </Link>
                         <Link href="mailto:diego.boost@gmail.com">
